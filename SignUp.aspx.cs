@@ -434,7 +434,7 @@ public partial class SignUp : System.Web.UI.Page
         Session["signupotp"] = otp.ToString();
        string message = otp.ToString()+ " is your One Time Password for siging up in Gautamaviator.com ";
 
-        string sendURL = "http://sms.genesissoftech.org/api/mt/SendSMS?user=rockstar&password=rockstar@123&senderid=RCKSTR&channel=TRANS&DCS=0&flashsms=0&number=" + number + "&text=" + message + "&route=2";
+        string sendURL = "YOURAPI=0&number=" + number + "&text=" + message + "&route=2";
 
         HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(sendURL);
         myRequest.Method = "GET";
@@ -454,7 +454,7 @@ public partial class SignUp : System.Web.UI.Page
 
 
        // String url = "";
-       //// String url = "http://sms.genesissoftech.org/sendsms.jsp?user=rockstar&password=rock@123" + "&sms=" + message + "&senderid=ROCKSTR" + "&mobiles=" + number + "&unicode=0&version=3";
+       //// String url = "";
        //         StreamWriter myWriter = null;
 
 
